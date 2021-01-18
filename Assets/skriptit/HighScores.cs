@@ -5,6 +5,10 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
 
+
+//Remake scoreboard:
+//check if score > 0 and score < topScore
+
 public class HighScores : MonoBehaviour
 {   
     
@@ -30,7 +34,7 @@ public class HighScores : MonoBehaviour
     void Update()
     {
         scoreText1.text = "Best: " + converter(topScore).ToString();
-        healthText.text = "HP: " + health.ToString();
+        healthText.text = health.ToString() + " hp";
     
         if (health <= 0)
         {

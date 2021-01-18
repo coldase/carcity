@@ -17,13 +17,11 @@ public class scoreboard : MonoBehaviour
         string str = time .ToString(@"mm\:ss");
         return str;
     }
-
     
-    // Start is called before the first frame update
-    public static float score1 = 3355f;
-    public static float score2 = 3355f;
-    public static float score3 = 3355f;
-    public static float score4 = 3355f;
+    public static float score1 = 2013f;
+    public static float score2 = 2013f;
+    public static float score3 = 2013f;
+    public static float score4 = 2013f;
 
     float[] scoreList = {score1, score2, score3, score4};
     List<float> finalList = new List<float>();
