@@ -4,35 +4,43 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
-{    public void PlayGame()
+{   
+    public void PlayGame()
     {
-
-        statistiikka.score = 0;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("kentta01");
     }
 
     public void QuitGame()
     {
         Debug.Log("QUITTING!!");
-        statistiikka.score = 0;
         Application.Quit();
     }
 
     public void TryAgain()
     {
 
-        statistiikka.score = 0;
         Debug.Log("Trying again!");
-        SceneManager.LoadScene("ajopeli_hiekkalaatikko");
+        AudioListener.pause = false;
+        Timer.timerRunning = false;
+        Time.timeScale = 1f;
+        HighScores.health = 5f;
+        SceneManager.LoadScene("kentta01");
     }
 
     public void MainMenu()
     {
 
-        statistiikka.score = 0;
         SceneManager.LoadScene("Menu");
-        Debug.Log("QUITTING!!");
     
+    }
+
+    public void ScoreBoard()
+    {
+        SceneManager.LoadScene("ScoreBoardScene");
+    }
+    public void ToggleOptions()
+    {
+        SceneManager.LoadScene("optionsscene");
     }
 
 }    

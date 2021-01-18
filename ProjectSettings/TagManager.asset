@@ -6,6 +6,7 @@ TagManager:
   tags:
   - autotag
   - autotrigger
+  - randcar
   layers:
   - Default
   - TransparentFX

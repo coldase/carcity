@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 7600036bf2aaeb847bf3724de15111ad
   - enabled: 1
-    path: Assets/Scenes/ajopeli_hiekkalaatikko.unity
-    guid: a822d7735012efc4b8aaa887378f1dea
+    path: Assets/Scenes/kentta01.unity
+    guid: 90968702c68a8ec47906d86b8d46091f
   - enabled: 1
     path: Assets/Scenes/EndMenu.unity
     guid: b33856d7615bf1c40916d4a27a1154b6
+  - enabled: 1
+    path: Assets/Scenes/ScoreBoardScene.unity
+    guid: 669ce81b74a87dd48a4d3ee21a006f04
+  - enabled: 1
+    path: Assets/Scenes/losescene.unity
+    guid: 35cce4bb317d88c4c8fef726ddebfcfc
   m_configObjects: {}

@@ -9,7 +9,7 @@ public class TriggerTime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioListener.pause = false;
     }
 
     // Update is called once per frame
@@ -17,7 +17,33 @@ public class TriggerTime : MonoBehaviour
     {
         
     }
-
+    public static void setScoreBoard(float total)
+    {
+        
+    }       
+    void addtoscorelist(float score)
+    {
+        if(score < scoreboard.score1)
+        {
+            scoreboard.score2 = scoreboard.score1;
+            scoreboard.score1 = score;
+        }
+        else if(score > scoreboard.score1 && score < scoreboard.score2)
+        {
+            scoreboard.score3 = scoreboard.score2;
+            scoreboard.score2 = score;
+        }
+        else if(score > scoreboard.score2 && score < scoreboard.score3)
+        {
+            scoreboard.score4 = scoreboard.score3;
+            scoreboard.score3 = score;
+        }
+        else if(score > scoreboard.score3 && score < scoreboard.score4)
+        {
+            scoreboard.score4 = score;
+        }
+    }
+            
     private void OnTriggerEnter(Collider other)
     {
         if (Timer.timerRunning)
@@ -26,6 +52,7 @@ public class TriggerTime : MonoBehaviour
                 if (!Added){
                     if (HighScores.topScore > Timer.totalSeconds){
                         HighScores.topScore = Timer.totalSeconds;
+                        addtoscorelist(Timer.totalSeconds);                   
                     }
                     Debug.Log(Timer.totalSeconds);
                     Added = true;
@@ -38,4 +65,5 @@ public class TriggerTime : MonoBehaviour
         Debug.Log("Triggered");
         Timer.timerRunning = true;
     }
+
 }

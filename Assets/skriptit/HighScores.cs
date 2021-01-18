@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class HighScores : MonoBehaviour
 {   
@@ -14,19 +15,28 @@ public class HighScores : MonoBehaviour
         return str;
     }
     public static float topScore; 
+    public static float health;
 
     [SerializeField] Text scoreText1;
+    [SerializeField] Text healthText;
     
 
     void Start()
     {
         topScore = 999f;
+        health = 5f;
     }
 
     void Update()
+    {
+        scoreText1.text = "Best: " + converter(topScore).ToString();
+        healthText.text = "HP: " + health.ToString();
+    
+        if (health <= 0)
         {
-            // topScores.Sort();
-            scoreText1.text = "Best: " + converter(topScore).ToString();
+            SceneManager.LoadScene("losescene");
         }
+    
+    }
 }
             
