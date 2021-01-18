@@ -41,63 +41,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/EndMenu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11856}
-    - Class: 114
-      Script: {instanceID: 11858}
-    - Class: 114
-      Script: {instanceID: 11862}
-    - Class: 114
-      Script: {instanceID: 11890}
-    - Class: 114
-      Script: {instanceID: 12706}
-    - Class: 114
-      Script: {instanceID: 13426}
-    - Class: 114
-      Script: {instanceID: 13692}
-    - Class: 114
-      Script: {instanceID: 13770}
-    - Class: 114
-      Script: {instanceID: 14212}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -132,23 +75,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12654}
+      Script: {instanceID: 12652}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13446}
+      Script: {instanceID: 13444}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13690}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 13976}
+      Script: {instanceID: 13974}
     - Class: 114
-      Script: {instanceID: 14096}
+      Script: {instanceID: 14094}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -201,17 +144,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12548}
+      Script: {instanceID: 12546}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13690}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -296,25 +239,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 12422}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12452}
+      Script: {instanceID: 12450}
     - Class: 114
-      Script: {instanceID: 12518}
+      Script: {instanceID: 12516}
     - Class: 114
-      Script: {instanceID: 13082}
+      Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 13606}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 13696}
+      Script: {instanceID: 13694}
     - Class: 114
-      Script: {instanceID: 13718}
+      Script: {instanceID: 13716}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 14132}
+      Script: {instanceID: 14130}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -375,15 +318,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13690}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 14210}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1629,7 +1572,6 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/kentta01.unity
-  - Assets/Scenes/EndMenu.unity
   - Assets/Scenes/ScoreBoardScene.unity
   - Assets/Scenes/losescene.unity
-  playerPath: C:/Users/jarzu/Desktop/ohjelmointi_syksy_2020_eka.exe
+  playerPath: C:/Users/jarzu/Desktop/CarCity_build3/ohjelmointi_syksy_2020_eka.exe
