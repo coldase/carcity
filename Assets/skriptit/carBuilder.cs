@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using System;
 
 public class carBuilder : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class carBuilder : MonoBehaviour
     private bool osuma = false;
 
     public GameObject mainCar;
+    public Rigidbody mainCarbody;
     public GameObject car1;
     public GameObject car2;
     public GameObject car3;
@@ -36,9 +38,9 @@ public class carBuilder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
+    
     void buildCar1()
     {
         int rand_x = Random.Range(-130, -55);

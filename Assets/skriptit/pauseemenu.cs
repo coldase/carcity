@@ -27,6 +27,7 @@ public class pauseemenu : MonoBehaviour
     }
     public void Resume()
     {
+        Cursor.visible = false;
         AudioListener.pause = false;
         Debug.Log("RESUME pressed!");
         pauseMenuUI.SetActive(false);
@@ -35,6 +36,7 @@ public class pauseemenu : MonoBehaviour
     }   
     void Pause()
     {
+        Cursor.visible = true;
         AudioListener.pause = true;
         Debug.Log("PAUSE pressed!");
         pauseMenuUI.SetActive(true);
@@ -47,13 +49,16 @@ public class pauseemenu : MonoBehaviour
         Application.Quit();
     }
     public void MainMenu2()
-    {
+    {   
+        Cursor.visible = true;
+        AudioListener.pause = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
         Debug.Log("Mainmenu toggled...");
     }
     public void RestartLevel()
     {
+        Cursor.visible = false;
         AudioListener.pause = false;
         Timer.timerRunning = false;
         GameIsPaused = false;

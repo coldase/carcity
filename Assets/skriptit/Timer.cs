@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+
+    public Rigidbody mainCarBody;
     // public static float currentTime;
     public static float currentMin = 0f;
     public static float totalSeconds;
@@ -16,6 +18,7 @@ public class Timer : MonoBehaviour
 
 
     [SerializeField] Text timerText;
+    [SerializeField] Text speedText;
 
     void Start()
     {
@@ -31,13 +34,13 @@ public class Timer : MonoBehaviour
             if (currentSec >= 60){
                 currentMin += 1;
                 currentSec = 0f;
-
             }
             timerText.text = currentMin.ToString("0:") + currentSec.ToString("00");
-
-                
         }
+        speedText.text = System.Math.Round(mainCarBody.velocity.magnitude * 3.6, 0).ToString() + " km/h";
     }
+
+        
     public static void resetTimer()
     {
         currentMin = 0f;
@@ -45,5 +48,6 @@ public class Timer : MonoBehaviour
         totalSeconds = 0f;
     }
 }
+   
 
 

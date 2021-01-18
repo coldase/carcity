@@ -17,10 +17,7 @@ public class TriggerTime : MonoBehaviour
     {
         
     }
-    public static void setScoreBoard(float total)
-    {
-        
-    }       
+           
     void addtoscorelist(float score)
     {
         if(score < scoreboard.score1)

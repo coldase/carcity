@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
 
 public class scoreboard : MonoBehaviour
 {
 
-
+    
     string converter(float seconds)
     {
         TimeSpan time = TimeSpan.FromSeconds(seconds);
@@ -17,10 +20,10 @@ public class scoreboard : MonoBehaviour
 
     
     // Start is called before the first frame update
-    public static float score1 = 2684f;
-    public static float score2 = 123f;
-    public static float score3 = 332f;
-    public static float score4 = 2222f;
+    public static float score1 = 3355f;
+    public static float score2 = 3355f;
+    public static float score3 = 3355f;
+    public static float score4 = 3355f;
 
     float[] scoreList = {score1, score2, score3, score4};
     List<float> finalList = new List<float>();

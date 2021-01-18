@@ -14,8 +14,10 @@ ScriptsOnlyBuild:
     - Menu
     - Timer
     - TriggerTime
+    - carBuilder
     - kameraSeuraa
     - pauseemenu
+    - scoreboard
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -54,6 +56,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -65,17 +71,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 11888}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13686}
+      Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 13764}
+      Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -109,40 +115,40 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11854}
-    - Class: 114
       Script: {instanceID: 11856}
     - Class: 114
       Script: {instanceID: 11858}
     - Class: 114
-      Script: {instanceID: 11860}
-    - Class: 114
       Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 11888}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12648}
+      Script: {instanceID: 12654}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13440}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13686}
+      Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 13764}
+      Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 13970}
+      Script: {instanceID: 13976}
     - Class: 114
-      Script: {instanceID: 14090}
+      Script: {instanceID: 14096}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,6 +180,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -185,19 +195,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11858}
     - Class: 114
+      Script: {instanceID: 11860}
+    - Class: 114
       Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 11888}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12548}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13686}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13764}
+      Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 13770}
+    - Class: 114
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -268,38 +282,42 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 11888}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 12016}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12042}
+      Script: {instanceID: 12018}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 12086}
+      Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 12134}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 12418}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 12448}
+      Script: {instanceID: 12422}
     - Class: 114
-      Script: {instanceID: 12514}
+      Script: {instanceID: 12452}
     - Class: 114
-      Script: {instanceID: 13076}
+      Script: {instanceID: 12518}
     - Class: 114
-      Script: {instanceID: 13600}
+      Script: {instanceID: 13082}
     - Class: 114
-      Script: {instanceID: 13690}
+      Script: {instanceID: 13606}
     - Class: 114
-      Script: {instanceID: 13712}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 13764}
+      Script: {instanceID: 13718}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 82698}
+      Script: {instanceID: 14132}
+    - Class: 114
+      Script: {instanceID: 14212}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 122
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -321,7 +339,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/optionsscene.unity:
+    Assets/Scenes/losescene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -336,6 +354,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -347,19 +369,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11858}
     - Class: 114
+      Script: {instanceID: 11860}
+    - Class: 114
       Script: {instanceID: 11862}
     - Class: 114
-      Script: {instanceID: 11888}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 13426}
     - Class: 114
-      Script: {instanceID: 13686}
+      Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 13764}
+      Script: {instanceID: 13770}
     - Class: 114
-      Script: {instanceID: 14204}
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -419,6 +443,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelReset
+  - hash:
+      serializedVersion: 2
+      Hash: 14160fc87e54e7b53a9194717bb98457
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: carBuilder
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -481,7 +511,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 4e72092140b40b6c7191f19784789d78
+      Hash: 6fc932b591e3487185ffd32bbc26a71f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
@@ -565,7 +595,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 9813040afc41ed84e6c8034365512828
+      Hash: 66415e4b701702816435b778e6d92834
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HighScores
@@ -725,6 +755,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Car
     className: CarUserControl
+  - hash:
+      serializedVersion: 2
+      Hash: f3080d756bf0de4de4cc97c4a8c2f675
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: scoreboard
   - hash:
       serializedVersion: 2
       Hash: 54e21c755bc66db70c9fcf8dbab0a84e
@@ -1507,16 +1543,16 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pauseemenu
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: 95b19fd1f90855375d7ded5e923608ec
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: statistiikka
   - hash:
       serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
@@ -1589,23 +1625,11 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: c8c5e65e9fb858572516474d6e2102bc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: pauseemenu
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: shdow
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/kentta01.unity
   - Assets/Scenes/EndMenu.unity
   - Assets/Scenes/ScoreBoardScene.unity
-  - Assets/Scenes/optionsscene.unity
-  playerPath: C:/Users/jarzu/Desktop/carcitybuild/ohjelmointi_syksy_2020_eka.exe
+  - Assets/Scenes/losescene.unity
+  playerPath: C:/Users/jarzu/Desktop/ohjelmointi_syksy_2020_eka.exe

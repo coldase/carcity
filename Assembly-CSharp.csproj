@@ -37,15 +37,16 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\TextMesh Pro\SampleScenes\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\skriptit\carBuilder.cs" />
      <Compile Include="Assets\TextMesh Pro\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
      <Compile Include="Assets\skriptit\Timer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\TextMesh Pro\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\skriptit\HighScores.cs" />
-     <Compile Include="Assets\shdow.cs" />
      <Compile Include="Assets\Toon City\Scripts\PropMovementScript.cs" />
      <Compile Include="Assets\skriptit\TriggerTime.cs" />
      <Compile Include="Assets\skriptit\SaveSystem.cs" />
+     <Compile Include="Assets\skriptit\scoreboard.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
@@ -88,8 +89,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\skriptit\pauseemenu.cs" />
      <Compile Include="Assets\skriptit\statistiikka.cs" />
-     <Compile Include="Assets\skriptit\carBuilder.cs" />
-     <Compile Include="Assets\skriptit\scoreboard.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

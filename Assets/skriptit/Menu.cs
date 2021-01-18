@@ -7,6 +7,12 @@ public class Menu : MonoBehaviour
 {   
     public void PlayGame()
     {
+        Cursor.visible = false;
+        Debug.Log("Newgame");
+        AudioListener.pause = false;
+        Timer.timerRunning = false;
+        Time.timeScale = 1f;
+        HighScores.health = 5f;
         SceneManager.LoadScene("kentta01");
     }
 
@@ -18,7 +24,7 @@ public class Menu : MonoBehaviour
 
     public void TryAgain()
     {
-
+        Cursor.visible = false;
         Debug.Log("Trying again!");
         AudioListener.pause = false;
         Timer.timerRunning = false;
@@ -29,7 +35,7 @@ public class Menu : MonoBehaviour
 
     public void MainMenu()
     {
-
+        Cursor.visible = true;
         SceneManager.LoadScene("Menu");
     
     }
