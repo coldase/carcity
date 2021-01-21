@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class kameraSeuraa : MonoBehaviour
 {
+
     public Transform target;
     public float PosLerp = 0.2f;
     public float RotLerp = 0.25f;
@@ -15,5 +16,4 @@ public class kameraSeuraa : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, RotLerp);
 
     }
-
 }

@@ -18,10 +18,10 @@ public class scoreboard : MonoBehaviour
         return str;
     }
     
-    public static float score1 = 2013f;
-    public static float score2 = 2013f;
-    public static float score3 = 2013f;
-    public static float score4 = 2013f;
+    public static float score1 = 0f;
+    public static float score2 = 0f;
+    public static float score3 = 0f;
+    public static float score4 = 0f;
 
     float[] scoreList = {score1, score2, score3, score4};
     List<float> finalList = new List<float>();

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 5e34fa4c3d0c55d41b0ef9b76455c373, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -5712,11 +5712,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCar: {fileID: 1000012319117119}
   mainCarbody: {fileID: 18519221}
-  car1: {fileID: 1000010954139730, guid: a30bb3f1634154428824acbdbc6e7503, type: 3}
-  car2: {fileID: 1000010975236142, guid: 23dee292e3a9e4d8ea247628b1c0a248, type: 3}
-  car3: {fileID: 1000013651584406, guid: 702194060871045d89182e1354365af4, type: 3}
-  car4: {fileID: 1000012389131226, guid: 73fead72e0aaf46a3a96b621e7ef02bb, type: 3}
-  car5: {fileID: 1000014289515206, guid: 22bf15112ed77437897eaf6143749687, type: 3}
 --- !u!1 &21592001
 GameObject:
   m_ObjectHideFlags: 0
@@ -13278,7 +13273,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -22146,6 +22141,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b877a3d5b474a48b701bd3026274a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  car1: {fileID: 1000010954139730, guid: a30bb3f1634154428824acbdbc6e7503, type: 3}
+  car2: {fileID: 1000010975236142, guid: 23dee292e3a9e4d8ea247628b1c0a248, type: 3}
+  car3: {fileID: 1000013651584406, guid: 702194060871045d89182e1354365af4, type: 3}
+  car4: {fileID: 1000014289515206, guid: 22bf15112ed77437897eaf6143749687, type: 3}
+  car5: {fileID: 1000012389131226, guid: 73fead72e0aaf46a3a96b621e7ef02bb, type: 3}
 --- !u!65 &1478513992
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26169,7 +26169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8430df2245daef74983e4f01b570e6d3, type: 2}
+  - {fileID: 2100000, guid: ffa9f731b331c2e40a2d09ecab6118c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26848,7 +26848,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -26889,7 +26889,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988837795}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: -216.39, y: 10.6, z: -110.86}
+  m_LocalPosition: {x: -216.16, y: 4.52, z: -99.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479431912}
