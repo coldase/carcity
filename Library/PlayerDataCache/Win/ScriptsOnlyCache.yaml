@@ -91,7 +91,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14094}
     - Class: 114
-      Script: {instanceID: 14210}
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -154,7 +154,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 14210}
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -203,6 +203,8 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -255,9 +257,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 14130}
+      Script: {instanceID: 14132}
     - Class: 114
-      Script: {instanceID: 14210}
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -326,7 +328,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 14210}
+      Script: {instanceID: 14212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -388,7 +390,7 @@ ScriptsOnlyBuild:
     className: LevelReset
   - hash:
       serializedVersion: 2
-      Hash: 14160fc87e54e7b53a9194717bb98457
+      Hash: 23b62c37cd67c0f88f33838b7456b513
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: carBuilder
@@ -658,7 +660,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 13f83493d5ee8a13d09ebfee0a7406f6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TriggerTime
@@ -1574,4 +1576,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/kentta01.unity
   - Assets/Scenes/ScoreBoardScene.unity
   - Assets/Scenes/losescene.unity
-  playerPath: C:/Users/jarzu/Desktop/CarCity_build3/ohjelmointi_syksy_2020_eka.exe
+  playerPath: C:/Users/jarzu/Desktop/carciry_build4/ohjelmointi_syksy_2020_eka.exe
