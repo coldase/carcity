@@ -46,10 +46,11 @@ public class topScoreScript : MonoBehaviour
 
     private void paivitaTop3()
     {
+        readTop3();
         top1.text = eka.ToString();
         top2.text = toka.ToString();
         top3.text = kolmas.ToString();
-        tallennaTop3();
+        //tallennaTop3();
     }
 
     //arpoo pistemäärän, jatkosas tämä tulee muuttujana itse pelistä
@@ -57,7 +58,7 @@ public class topScoreScript : MonoBehaviour
     {
         pisteet = Random.Range(1000, 10000);
         Debug.Log("Pisteet: " + pisteet.ToString());
-
+        tallennaTop3();
         paivitaTop3();
 
 
@@ -75,9 +76,9 @@ public class topScoreScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        readTop3();
         paivitaTop3();
         //luetaan nämä muuttujiin
-        readTop3();
     }
 
     // Update is called once per frame
