@@ -73,7 +73,7 @@ public class changeLetters : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Return)){
             finalWord.color = Color.green;
-            finalWord.text = alpha.GetValue(firstChar).ToString() + alpha.GetValue(secondChar) + alpha.GetValue(thirdChar).ToString();
+            finalWord.text = alpha.GetValue(firstChar).ToString() + alpha.GetValue(secondChar) + alpha.GetValue(thirdChar).ToString() + " saved";
         }
 
         firstLetter.text = alpha.GetValue(firstChar).ToString();
