@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Timer : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Timer : MonoBehaviour
     public static float currentMin = 0f;
     public static float totalSeconds;
     
+    public static int convTotalSeconds;
     public static float currentSec = 0f;
     float startingTime = 0f;
 
@@ -38,6 +40,7 @@ public class Timer : MonoBehaviour
             timerText.text = currentMin.ToString("0:") + currentSec.ToString("00");
         }
         speedText.text = System.Math.Round(mainCarBody.velocity.magnitude * 3.6, 0).ToString() + " km/h";
+        convTotalSeconds = System.Convert.ToInt32(totalSeconds);
     }
 
         

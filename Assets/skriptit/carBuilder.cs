@@ -18,7 +18,7 @@ public class carBuilder : MonoBehaviour
         {
             if (!osuma){
                 Debug.Log("AUTOOSUMA");
-                HighScores.health -= 1;
+                TriggerTime.currentScore -= 100;
                 osuma = true;
             }
             osuma = false;

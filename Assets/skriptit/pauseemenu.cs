@@ -53,7 +53,7 @@ public class pauseemenu : MonoBehaviour
         Cursor.visible = true;
         AudioListener.pause = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(0);
         Debug.Log("Mainmenu toggled...");
     }
     public void RestartLevel()
@@ -63,8 +63,9 @@ public class pauseemenu : MonoBehaviour
         Timer.timerRunning = false;
         GameIsPaused = false;
         Time.timeScale = 1f;
-        HighScores.health = 5f;
-        SceneManager.LoadScene("kentta01");
+        HighScores.laps = 1;
+        TriggerTime.currentScore = 0;
+        SceneManager.LoadScene(1);
     }
 
     public void SaveScores()

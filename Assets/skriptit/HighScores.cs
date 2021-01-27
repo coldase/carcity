@@ -5,21 +5,12 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
 
-
-//Remake scoreboard:
-//check if score > 0 and score < topScore
-
 public class HighScores : MonoBehaviour
 {   
     
-    string converter(float seconds)
-    {
-        TimeSpan time = TimeSpan.FromSeconds(seconds);
-        string str = time .ToString(@"mm\:ss");
-        return str;
-    }
-    public static float topScore; 
-    public static float health;
+    
+    public static int topScore; 
+    public static int laps;
 
     [SerializeField] Text scoreText1;
     [SerializeField] Text healthText;
@@ -27,19 +18,22 @@ public class HighScores : MonoBehaviour
 
     void Start()
     {
-        topScore = 999f;
-        health = 5f;
+        topScore = 0;
+        laps = 1;
     }
 
     void Update()
     {
-        scoreText1.text = "Best: " + converter(topScore).ToString();
-        healthText.text = health.ToString() + " hp";
+        scoreText1.text = "Score: " + topScore.ToString();
+        healthText.text = "Lap " + laps.ToString() + "/3";
     
-        if (health <= 0)
+        if (laps >= 4)
         {
-            SceneManager.LoadScene("losescene");
+            
+            SceneManager.LoadScene("scoreUI");
+            Cursor.visible = true;
+            topScore = TriggerTime.currentScore;
+            topScoreScript.youScored = topScore;
         }
-    
     }
-}           
+}

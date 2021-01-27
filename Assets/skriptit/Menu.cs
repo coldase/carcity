@@ -12,7 +12,8 @@ public class Menu : MonoBehaviour
         AudioListener.pause = false;
         Timer.timerRunning = false;
         Time.timeScale = 1f;
-        HighScores.health = 5f;
+        HighScores.laps = 1;
+        TriggerTime.currentScore = 0; 
         SceneManager.LoadScene("kentta01");
     }
 
@@ -29,7 +30,8 @@ public class Menu : MonoBehaviour
         AudioListener.pause = false;
         Timer.timerRunning = false;
         Time.timeScale = 1f;
-        HighScores.health = 5f;
+        HighScores.laps = 1;
+        TriggerTime.currentScore = 0; 
         SceneManager.LoadScene("kentta01");
     }
 
@@ -42,7 +44,8 @@ public class Menu : MonoBehaviour
 
     public void ScoreBoard()
     {
-        SceneManager.LoadScene("ScoreBoardScene");
+        Cursor.visible = true;
+        SceneManager.LoadScene("scoreUI");
     }
     public void ToggleOptions()
     {

@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class topScoreScript : MonoBehaviour
 {
     public GameObject toggleScore;
     public GameObject toggleInput;
+
+    public GameObject toggleSaveBtn;
+
+    public Text youScoredText;
+    public static int youScored;
 
     private int pisteet;
     public Text top1;
@@ -90,33 +96,49 @@ public class topScoreScript : MonoBehaviour
         top1_nimi.text = ekaNimi.ToString();
         top2_nimi.text = tokaNimi.ToString();
         top3_nimi.text = kolmasNimi.ToString();
+
+        if(youScored > kolmas){
+            youScoredText.text = "Your Score was " + youScored.ToString();
+            toggleSaveBtn.SetActive(true); 
+
+        }
+
         //tallennaTop3();
     }
 
     //arpoo pistemäärän, jatkosas tämä tulee muuttujana itse pelistä
     public void randomScore()
     {
-        pisteet = Random.Range(1000, 10000);
+        // pisteet = Random.Range(1000, 10000);
+        pisteet = HighScores.topScore;
+        youScored = pisteet;
         Debug.Log("Pisteet: " + pisteet.ToString());
+        
         paivitaTop3();
         if (pisteet > kolmas)
         {
+            Cursor.visible = false;
             toggleScore.SetActive(false);
             toggleInput.SetActive(true);
         }
 
     }
 
+    public void loadMenuScene(){
+        Cursor.visible = true;
+        SceneManager.LoadScene("Menu");
+    }
+
     public void resetTop3()
     {
         //Luodaan oletusarvot
-        PlayerPrefs.SetInt("top1_score", 3000);
-        PlayerPrefs.SetInt("top2_score", 2000);
-        PlayerPrefs.SetInt("top3_score", 1000);
+        PlayerPrefs.SetInt("top1_score", 0);
+        PlayerPrefs.SetInt("top2_score", 0);
+        PlayerPrefs.SetInt("top3_score", 0);
 
-        PlayerPrefs.SetString("top1_nimi", "AAA");
-        PlayerPrefs.SetString("top2_nimi", "BBB");
-        PlayerPrefs.SetString("top3_nimi", "CCC");
+        PlayerPrefs.SetString("top1_nimi", "NUL");
+        PlayerPrefs.SetString("top2_nimi", "NUL");
+        PlayerPrefs.SetString("top3_nimi", "NUL");
 
         paivitaTop3();
     }
@@ -130,12 +152,12 @@ public class topScoreScript : MonoBehaviour
         //Jos ei, tekee sen, ns dummydata
         if (onkoLista == 0)
         {
-            PlayerPrefs.SetString("top1_nimi", "KOL");
-            PlayerPrefs.SetString("top2_nimi", "KAI");
-            PlayerPrefs.SetString("top3_nimi", "MAX");
-            PlayerPrefs.SetInt("top1_score", 3000);
-            PlayerPrefs.SetInt("top2_score", 2000);
-            PlayerPrefs.SetInt("top3_score", 1000);
+            PlayerPrefs.SetString("top1_nimi", "NUL");
+            PlayerPrefs.SetString("top2_nimi", "NUL");
+            PlayerPrefs.SetString("top3_nimi", "NUL");
+            PlayerPrefs.SetInt("top1_score", 0);
+            PlayerPrefs.SetInt("top2_score", 0);
+            PlayerPrefs.SetInt("top3_score", 0);
             PlayerPrefs.SetInt("listaOlemassa", 1);
         }
 
@@ -183,8 +205,13 @@ public class topScoreScript : MonoBehaviour
         {
             tallenna();
             paivitaTop3();
+            Cursor.visible = true;
             toggleScore.SetActive(true);
             toggleInput.SetActive(false);
+            toggleSaveBtn.SetActive(false);
+            youScoredText.text = "";
+            youScored = 0;
+
             // SceneManager.LoadScene(0);
         }
         tarkistaVari();

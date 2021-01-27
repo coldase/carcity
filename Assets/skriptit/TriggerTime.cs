@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using System;
+// using System;
 
 public class TriggerTime : MonoBehaviour
 {
+
+    private int carsToBuild = 1;
     private bool Added = false;
 
     public GameObject car1;
@@ -13,64 +15,37 @@ public class TriggerTime : MonoBehaviour
     public GameObject car4;
     public GameObject car5;
 
+    public static int currentScore = 0;
+    private int lapScore;
+
     void Start()
     {
+        buildCars(carsToBuild);
         AudioListener.pause = false;
-        buildCars(2);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        HighScores.topScore = currentScore;
     }
-           
-    void addtoscorelist(float score)
-    {
-        if (score > 0){
-
-            if(score < scoreboard.score1)
-            {
-                scoreboard.score2 = scoreboard.score1;
-                scoreboard.score1 = score;
-            }
-            else if(score > scoreboard.score1 && score < scoreboard.score2)
-            {
-                scoreboard.score3 = scoreboard.score2;
-                scoreboard.score2 = score;
-            }
-            else if(score > scoreboard.score2 && score < scoreboard.score3)
-            {
-                scoreboard.score4 = scoreboard.score3;
-                scoreboard.score3 = score;
-            }
-            else if(score > scoreboard.score3 && score < scoreboard.score4)
-            {
-                scoreboard.score4 = score;
-            }
-        }
-    }
-  
+      
     private void OnTriggerEnter(Collider other)
     {
-        if (Timer.timerRunning)
-        {
-            if (Timer.currentSec > 5 || Timer.currentMin > 0){
-                if (!Added){
-                    if (HighScores.topScore > Timer.totalSeconds){
-                        HighScores.topScore = Timer.totalSeconds;
-                        addtoscorelist(Timer.totalSeconds);                   
-                    }
-                    Added = true;
-                }
-                Timer.resetTimer();
-                destoryCars();
-                buildCars(2);
-                Timer.timerRunning = false;
-                Added = false;
-            }
+        if(Timer.timerRunning && secondTrigger.triggeredSecond){
+            HighScores.laps += 1;
+            lapScore += 500;
+            //Timer.resetTimer();
+            currentScore += lapScore - Timer.convTotalSeconds * 2;
+            destoryCars();
+            buildCars(carsToBuild);
+            carsToBuild += 1;
         }
+
+
         Timer.timerRunning = true;
+
+        secondTrigger.triggeredSecond = false;
     }
 
     void buildCar1()
