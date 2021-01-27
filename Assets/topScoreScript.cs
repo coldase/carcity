@@ -34,7 +34,6 @@ public class topScoreScript : MonoBehaviour
     public Text merkki1;
     public Text merkki2;
     public Text merkki3;
-    public Text ok;
     private int paikka;
     private int merkin1Aakkonen;
     private int merkin2Aakkonen;
@@ -165,7 +164,6 @@ public class topScoreScript : MonoBehaviour
         merkki1.text = aakkoset[merkin1Aakkonen];
         merkki2.text = aakkoset[merkin2Aakkonen];
         merkki3.text = aakkoset[merkin3Aakkonen];
-        ok.text = "ANNA NIMI";
         paikka = 1;
 
         readTop3();
@@ -187,11 +185,12 @@ public class topScoreScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (paikka > 3)
+            if (paikka < 3)
             {
-                paikka = 4;
+                paikka++;
             }
-            else paikka++;
+            else 
+                paikka = 1;
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -199,9 +198,9 @@ public class topScoreScript : MonoBehaviour
             {
                 paikka--;
             }
-            else paikka = 1;
+            else paikka = 3;
         }
-        if (paikka == 4 && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             tallenna();
             paivitaTop3();
@@ -269,19 +268,7 @@ public class topScoreScript : MonoBehaviour
         merkki1.text = aakkoset[merkin1Aakkonen];
         merkki2.text = aakkoset[merkin2Aakkonen];
         merkki3.text = aakkoset[merkin3Aakkonen];
-        if (paikka > 3)
-        {
-            ok.text = "OK";
-            ok.color = Color.white;
-
-        }
-        else
-        {
-            ok.text = "ANNA NIMI";
-            ok.color = Color.yellow;
-
-
-        }
+        
     }
 
     private void seuraavaKirjainIsompi()

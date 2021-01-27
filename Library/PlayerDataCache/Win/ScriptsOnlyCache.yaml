@@ -1413,7 +1413,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: da877c8aa58d93d167bc030026d90765
+      Hash: d6e63d28eee30697431e67d7920ed4a4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: topScoreScript
@@ -1585,4 +1585,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/kentta01.unity
   - Assets/Scenes/losescene.unity
   - Assets/Scenes/scoreUI.unity
-  playerPath: C:/Users/jarzu/Desktop/carcity_build5/ohjelmointi_syksy_2020_eka.exe
+  playerPath: C:/Users/jarzu/Desktop/carcity_build6/ohjelmointi_syksy_2020_eka.exe

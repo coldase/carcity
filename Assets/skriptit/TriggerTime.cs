@@ -38,8 +38,8 @@ public class TriggerTime : MonoBehaviour
             //Timer.resetTimer();
             currentScore += lapScore - Timer.convTotalSeconds * 2;
             destoryCars();
-            buildCars(carsToBuild);
             carsToBuild += 1;
+            buildCars(carsToBuild);
         }
 
 
