@@ -76,7 +76,7 @@ public class TriggerTime : MonoBehaviour
     {
         int rand_x = Random.Range(-274, -242);
         int rand_z = Random.Range(-150, -140);
-        Instantiate(car5, new Vector3(rand_x, 0, rand_z), Quaternion.identity);
+        Instantiate(car5, new Vector3(rand_x, 0.5f, rand_z), Quaternion.identity);
     }
     public void buildCars(int count){
         for (var i=0; i < count; i++){
