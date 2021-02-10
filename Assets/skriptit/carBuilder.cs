@@ -21,8 +21,8 @@ public class carBuilder : MonoBehaviour
                 TriggerTime.currentScore -= 100;
                 osuma = true;
             }
-            osuma = false;
         }
+        osuma = false;
     }
     
 

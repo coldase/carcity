@@ -59,6 +59,7 @@ public class pauseemenu : MonoBehaviour
     public void RestartLevel()
     {
         Cursor.visible = false;
+        Timer.resetTimer();
         AudioListener.pause = false;
         Timer.timerRunning = false;
         GameIsPaused = false;

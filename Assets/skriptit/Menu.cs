@@ -11,6 +11,7 @@ public class Menu : MonoBehaviour
         Debug.Log("Newgame");
         AudioListener.pause = false;
         Timer.timerRunning = false;
+        Timer.resetTimer();
         Time.timeScale = 1f;
         HighScores.laps = 1;
         TriggerTime.currentScore = 0; 
@@ -30,6 +31,7 @@ public class Menu : MonoBehaviour
         AudioListener.pause = false;
         Timer.timerRunning = false;
         Time.timeScale = 1f;
+        Timer.resetTimer();
         HighScores.laps = 1;
         TriggerTime.currentScore = 0; 
         SceneManager.LoadScene("kentta01");
