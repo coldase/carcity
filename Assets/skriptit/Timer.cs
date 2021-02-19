@@ -19,8 +19,8 @@ public class Timer : MonoBehaviour
     public static bool timerRunning = false;
 
 
-    [SerializeField] Text timerText;
-    [SerializeField] Text speedText;
+    [SerializeField] Text timerText = null;
+    [SerializeField] Text speedText = null;
 
     void Start()
     {

@@ -7,7 +7,6 @@ public class TriggerTime : MonoBehaviour
 {
 
     private int carsToBuild = 1;
-    private bool Added = false;
 
     public GameObject car1;
     public GameObject car2;
@@ -35,7 +34,6 @@ public class TriggerTime : MonoBehaviour
         if(Timer.timerRunning && secondTrigger.triggeredSecond){
             HighScores.laps += 1;
             lapScore += 500;
-            //Timer.resetTimer();
             currentScore += lapScore - Timer.convTotalSeconds * 2;
             destoryCars();
             carsToBuild += 1;
@@ -52,7 +50,8 @@ public class TriggerTime : MonoBehaviour
     {
         int rand_x = Random.Range(-130, -55);
         int rand_z = Random.Range(115, 124);
-        Instantiate(car1, new Vector3(rand_x, 10, rand_z), Quaternion.identity);
+        Instantiate(car1, new Vector3(rand_x, 10, rand_z), Quaternion.Euler(0f, 90f, 0f));
+        car1.transform.rotation = Quaternion.Euler(0, 80, 0);
     }
     void buildCar2()
     {
@@ -64,7 +63,7 @@ public class TriggerTime : MonoBehaviour
     {
         int rand_x = Random.Range(-90, -220);
         int rand_z = Random.Range(275, 282);
-        Instantiate(car3, new Vector3(rand_x, 10, rand_z), Quaternion.identity);
+        Instantiate(car3, new Vector3(rand_x, 10, rand_z), Quaternion.Euler(0f, 90f, 0f));
     }
     void buildCar4()
     {
@@ -76,7 +75,7 @@ public class TriggerTime : MonoBehaviour
     {
         int rand_x = Random.Range(-274, -242);
         int rand_z = Random.Range(-150, -140);
-        Instantiate(car5, new Vector3(rand_x, 0.5f, rand_z), Quaternion.identity);
+        Instantiate(car5, new Vector3(rand_x, 0.5f, rand_z), Quaternion.Euler(0f, 90f, 0f));
     }
     public void buildCars(int count){
         for (var i=0; i < count; i++){

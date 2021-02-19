@@ -12,8 +12,8 @@ public class HighScores : MonoBehaviour
     public static int topScore; 
     public static int laps;
 
-    [SerializeField] Text scoreText1;
-    [SerializeField] Text healthText;
+    [SerializeField] Text scoreText1 = null;
+    [SerializeField] Text healthText = null;
     
 
     void Start()
